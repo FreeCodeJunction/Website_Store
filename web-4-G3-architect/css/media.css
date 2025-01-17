@@ -2,6 +2,7 @@
   /* feature-list section */
   .feature-list {
     padding-inline: 2rem;
+    margin-block: 130px;
   }
 }
 
@@ -15,6 +16,8 @@
   /* feature list section  */
   .feature-list {
     gap: 50px;
+    margin-block: 120px;
+
     padding-inline: 3rem;
   }
 
@@ -36,6 +39,7 @@
 
   /* feature list section  */
   .feature-list {
+    margin-block: 110px;
     gap: 20px;
   }
 }
@@ -49,12 +53,19 @@
 
   /* feature list section */
   .feature-list {
-    grid-template-columns: 0.8fr;
+    grid-template-columns: 1fr;
     justify-content: center;
+    margin-block: 100px;
   }
 
   .feature-list__content {
     order: 2;
+  }
+
+  .feature-list__img-container > img {
+    max-height: 40rem;
+    width: 100%;
+    object-fit: cover;
   }
 }
 /* small devices */
@@ -86,6 +97,7 @@
   /* feature list section */
   .feature-list {
     grid-template-columns: 1fr;
+    margin-block: 80px;
   }
 }
 
@@ -118,6 +130,7 @@
   .feature-list {
     gap: 30px;
     padding-inline: 0;
+    margin-block: 70px;
   }
 
   .feature-list__img-container > img {
