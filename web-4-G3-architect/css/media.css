@@ -1,8 +1,29 @@
+@media screen and (max-width: 1600px) {
+  /* feature-list section */
+  .feature-list {
+    padding-inline: 2rem;
+  }
+}
+
 /* xl devices */
 
 @media screen and (max-width: 1400px) {
   .header {
     padding: 50px 3rem 70px;
+  }
+
+  /* feature list section  */
+  .feature-list {
+    gap: 50px;
+    padding-inline: 3rem;
+  }
+
+  .feature-list__img-container {
+    align-self: center;
+  }
+
+  .feature-list__img-container > span {
+    display: none;
   }
 }
 
@@ -12,6 +33,11 @@
   .header {
     padding: 50px 3rem 70px;
   }
+
+  /* feature list section  */
+  .feature-list {
+    gap: 20px;
+  }
 }
 
 /* medium devices  */
@@ -19,6 +45,16 @@
 @media screen and (max-width: 992px) {
   .header {
     padding: 40px 1.7rem 50px;
+  }
+
+  /* feature list section */
+  .feature-list {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+
+  .feature-list__content {
+    order: 2;
   }
 }
 /* small devices */
@@ -46,6 +82,11 @@
   .feature__img-container {
     padding-inline: 0;
   }
+
+  /* feature list section */
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* extra small devices */
@@ -71,5 +112,25 @@
 
   .feature__content > h1 {
     font-size: 2.5rem;
+  }
+
+  /* feature list section  */
+  .feature-list {
+    gap: 30px;
+    padding-inline: 0;
+  }
+
+  .feature-list__img-container > img {
+    max-height: 25rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .feature-list__content {
+    padding-inline: 2rem;
+  }
+
+  .feature-list__item {
+    padding: 1rem;
   }
 }
