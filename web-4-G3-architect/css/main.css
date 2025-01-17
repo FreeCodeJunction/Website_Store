@@ -1,5 +1,5 @@
 @import url("./reset-and-utils.css");
 @import url("./sections/header.css");
-
+@import url("sections/features.css");
 /* media files  */
 @import url("media.css");

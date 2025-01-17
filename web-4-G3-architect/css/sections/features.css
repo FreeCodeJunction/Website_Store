@@ -1,0 +1,39 @@
+.main {
+  padding-block: 85px 216px;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.feature__img-container {
+  padding-inline: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-items: center;
+  align-items: center;
+}
+
+.feature__img-container > img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.feature__content > h1 {
+  font-size: 2.813rem;
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.feature__content > .regular-description {
+  margin-block: 1.5rem 2rem;
+  max-width: 537px;
+}

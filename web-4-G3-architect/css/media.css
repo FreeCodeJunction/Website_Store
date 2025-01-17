@@ -34,6 +34,18 @@
   .header__mobile-nav {
     display: flex;
   }
+
+  /* feature section  */
+
+  .feature {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-inline: 2rem;
+  }
+
+  .feature__img-container {
+    padding-inline: 0;
+  }
 }
 
 /* extra small devices */
@@ -49,5 +61,15 @@
 
   .header__mobile-nav {
     display: flex;
+  }
+
+  /* feature section  */
+
+  .feature__img-container {
+    gap: 0.5rem;
+  }
+
+  .feature__content > h1 {
+    font-size: 2.5rem;
   }
 }
