@@ -28,7 +28,7 @@
 .regular-description {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 26px;
   color: rgba(114, 114, 114, 1);
 }
 
@@ -66,6 +66,9 @@
   color: rgba(114, 114, 114, 1);
 }
 
+.text-mild-yellow {
+  color: #ff900e;
+}
 /* flex utilities */
 
 .flex {
