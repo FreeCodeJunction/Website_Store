@@ -16,7 +16,27 @@
 
 .regular-heading {
   font-weight: 700;
-  font-size: 2.813rem;
+  /* font-size: 2.813rem; */
+  font-size: 2rem;
+  font-size: clamp(2rem, 2.9756rem + -0.8130000000000002vw, 2.813rem);
+}
+
+.regular-description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(114, 114, 114, 1);
+}
+
+.regular-button {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  padding: 21px 25px;
+  border-radius: 8px;
+  background-color: #ff900e;
+  border: none;
+  cursor: pointer;
 }
 
 .max-width-center {
@@ -36,6 +56,10 @@
 
 .text-dark-two {
   color: rgba(66, 66, 66, 1);
+}
+
+.text-dark-three {
+  color: rgba(114, 114, 114, 1);
 }
 
 /* flex utilities */

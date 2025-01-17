@@ -1,9 +1,6 @@
 .header {
   background-color: rgba(255, 144, 14, 0.1);
-  padding: 50px 0 0;
-}
-
-.header__nav {
+  padding: 50px 0 45px;
 }
 
 .header__items {
@@ -62,4 +59,37 @@
 
 #mobile-nav > li > a {
   font-size: 1rem;
+}
+
+/* banner section  */
+
+#banner {
+  text-align: center;
+  margin-top: 102px;
+}
+
+.banner__content {
+  max-width: 862px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
+
+.banner__content > h1 {
+  /* font-size: 4rem; */
+  /* font-size: 2.3rem; */
+  font-size: 2.3rem;
+  font-size: clamp(2.3rem, 1.9599999999999997rem + 1.7000000000000002vw, 4rem);
+  text-align: center;
+  max-width: 628px;
+  margin-inline: auto;
+}
+
+.banner__content > p {
+  text-align: center;
+  margin-block: 1rem 1.5rem;
+}
+
+.banner__img-container > img {
+  max-width: 100%;
+  height: auto;
 }
