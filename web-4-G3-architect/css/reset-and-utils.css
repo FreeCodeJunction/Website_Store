@@ -17,8 +17,12 @@
 .regular-heading {
   font-weight: 700;
   /* font-size: 2.813rem; */
-  font-size: 2rem;
-  font-size: clamp(2rem, 2.9756rem + -0.8130000000000002vw, 2.813rem);
+  font-size: 1.7rem;
+  font-size: clamp(
+    1.7rem,
+    1.4773999999999998rem + 1.1130000000000002vw,
+    2.813rem
+  );
 }
 
 .regular-description {
