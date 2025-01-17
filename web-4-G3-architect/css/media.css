@@ -1,0 +1,19 @@
+@media screen and (max-width: 576px) {
+  /* utilities files media */
+  .regular-heading {
+    font-size: 2rem;
+  }
+  /* header media */
+
+  .header {
+    padding: 25px 1rem 0;
+  }
+
+  .header__items {
+    display: none;
+  }
+
+  .header__mobile-nav {
+    display: flex;
+  }
+}
