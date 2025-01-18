@@ -14,4 +14,9 @@
   .banner__content > p {
     max-width: 90%;
   }
+
+  /* popular products section  */
+  .popular__products {
+    gap: 1rem;
+  }
 }

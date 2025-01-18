@@ -35,4 +35,16 @@
     overflow: hidden;
     border-radius: 80px;
   }
+
+  /* social icon container  */
+
+  .social-icon-container > div {
+    gap: 40px;
+  }
+
+  /* popular products section  */
+  .popular__products {
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
