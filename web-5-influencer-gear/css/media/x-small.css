@@ -1,0 +1,43 @@
+@media screen and (max-width: 576px) {
+  /* utilities classes */
+  i {
+    font-size: 1.8rem;
+  }
+
+  .header {
+    padding-inline: 1rem;
+  }
+
+  .navbar > h1 {
+    font-size: 1.2rem;
+  }
+
+  .banner {
+    margin-top: 22px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .banner__content > h1 {
+    font-size: 1.75rem;
+    line-height: auto;
+    text-align: center;
+  }
+
+  .banner__content > p {
+    text-align: center;
+    margin-block: 15px 20px;
+  }
+  .banner__content {
+    order: 2;
+  }
+
+  .banner__img-container {
+    background-size: cover;
+  }
+
+  .banner__content > button {
+    display: block;
+    margin-inline: auto;
+  }
+}

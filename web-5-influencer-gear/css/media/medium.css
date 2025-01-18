@@ -1,0 +1,17 @@
+@media screen and (max-width: 992px) {
+  .navbar {
+    gap: 25px;
+  }
+  .desktop-nav {
+    gap: 15px;
+  }
+
+  .banner__content > h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .banner__content > p {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+  .header {
+    padding-inline: 2.5rem;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .mobile-nav-container {
+    display: block;
+    order: -1;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  /* banner  */
+
+  .banner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .banner__content > h1 {
+    font-size: 2.5rem;
+    line-height: 45px;
+  }
+
+  .banner__content > p {
+    max-width: 97%;
+    font-size: 0.9rem;
+  }
+
+  .banner__img-container {
+    overflow: hidden;
+    border-radius: 80px;
+  }
+}

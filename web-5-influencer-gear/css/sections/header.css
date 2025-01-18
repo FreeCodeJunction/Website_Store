@@ -1,0 +1,66 @@
+.header {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-top: 87px;
+}
+
+/* navbar section */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.desktop-nav a:hover {
+  color: var(--pure-black);
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.desktop-nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 34px;
+}
+
+.mobile-nav-container {
+  display: none;
+}
+
+/* banner section */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.banner__img-container {
+  background: url("./../../images/Circle\ design.svg") center center no-repeat;
+  background-size: contain;
+}
+
+.banner__img-container > img {
+  max-width: 440px;
+}
+
+.banner__content {
+  max-width: 582px;
+}
+
+.banner__content > h1 {
+  font-size: 3.25rem;
+
+  line-height: 70px;
+}
+
+.banner__content > p {
+  max-width: 505px;
+  margin-block: 1rem;
+}

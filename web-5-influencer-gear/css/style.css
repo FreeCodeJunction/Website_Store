@@ -1,0 +1,14 @@
+/* * this main css file contains all the variables utility classes and also css reset */
+
+@import url("main.css");
+
+/* * sections css files  */
+@import url("sections/header.css");
+
+/* * media files based on screen sizes  */
+@import url("media/xl.css");
+@import url("media/large.css");
+@import url("media/medium.css");
+
+@import url("media/small.css");
+@import url("media/x-small.css");
