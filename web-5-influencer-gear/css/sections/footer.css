@@ -1,0 +1,33 @@
+.footer {
+  padding-block: 50px;
+  margin-top: 100px;
+  background: var(--clr-footer);
+  color: var(--pure-white);
+}
+
+.footer > * {
+  text-align: center;
+}
+
+.footer > h1 {
+  font-size: 1.5rem;
+}
+
+.footer > p {
+  font-size: 0.875rem;
+  line-height: 24px;
+  font-family: var(--font-manrope);
+  color: var(--clr-footer-para);
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer__icons > i {
+  font-size: 1.2rem;
+}

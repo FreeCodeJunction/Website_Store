@@ -1,0 +1,28 @@
+.featured-products {
+  max-width: 1110px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+
+.featured-products__content {
+  flex: 1.74;
+  padding-left: 96px;
+}
+
+.featured-products__content > h1 {
+  line-height: 60px;
+  font-size: 2.375rem;
+  color: var(--clr-featured-title);
+}
+
+.featured-products__content > p {
+  line-height: 28px;
+  color: var(--clr-featured-des);
+  margin-block: 1rem;
+  max-width: 501px;
+}
+
+.featured-products__content > .regular-button {
+  border-radius: initial;
+}

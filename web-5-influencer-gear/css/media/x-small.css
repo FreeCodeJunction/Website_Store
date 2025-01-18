@@ -80,4 +80,18 @@
   .popular__product > img {
     width: 100%;
   }
+
+  /* featured products  */
+  .featured-products {
+    padding-inline: 1rem;
+  }
+
+  /* footer  */
+  .footer > h1 {
+    font-size: 1rem;
+  }
+
+  .footer > p {
+    font-size: 0.75rem;
+  }
 }

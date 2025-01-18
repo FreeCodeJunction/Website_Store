@@ -19,4 +19,20 @@
   .popular__products {
     gap: 1rem;
   }
+
+  /* featured products  */
+
+  .featured-products__content {
+    flex: 1.3;
+    padding-left: 2rem;
+  }
+
+  .featured-products__content > h1 {
+    font-size: 1.9rem;
+    line-height: 30px;
+  }
+
+  .featured-products__img-container {
+    flex: 1;
+  }
 }
