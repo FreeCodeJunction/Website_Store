@@ -15,4 +15,22 @@
   .popular__products {
     padding-inline: 3rem;
   }
+
+  /* featured products section */
+
+  .featured-products {
+    padding-inline: 2rem;
+  }
+
+  .featured-products__content > h1 {
+    line-height: 40px;
+  }
+
+  .featured-products__content > p {
+    line-height: 20px;
+  }
+
+  .featured-products__content {
+    padding-left: 3rem;
+  }
 }
