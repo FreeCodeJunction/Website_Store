@@ -4,7 +4,8 @@
 
 /* * sections css files  */
 @import url("sections/header.css");
-
+@import url("sections/social.css");
+@import url("sections/popular.css");
 /* * media files based on screen sizes  */
 @import url("media/xl.css");
 @import url("media/large.css");

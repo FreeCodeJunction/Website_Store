@@ -10,4 +10,9 @@
   .banner__img-container > img {
     max-width: 100%;
   }
+
+  /* popular products section  */
+  .popular__products {
+    padding-inline: 3rem;
+  }
 }

@@ -6,6 +6,7 @@
 
   .header {
     padding-inline: 1rem;
+    padding-top: 35px;
   }
 
   .navbar > h1 {
@@ -39,5 +40,44 @@
   .banner__content > button {
     display: block;
     margin-inline: auto;
+  }
+
+  /* social icon container  */
+
+  .social-icon-container {
+    row-gap: 20px;
+    padding-inline: 1rem;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .social-icon-container > div {
+    gap: 31px;
+  }
+
+  /*  */
+
+  /* popular products section */
+
+  .popular {
+    margin-block: 50px;
+  }
+
+  .popular__see-more {
+    margin-top: 32px;
+  }
+
+  .popular__products {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-inline: 1rem;
+  }
+
+  .popular__title {
+    font-size: 1.5rem;
+  }
+
+  .popular__product > img {
+    width: 100%;
   }
 }
