@@ -1,0 +1,28 @@
+.sponsor {
+  margin-top: 180px;
+}
+
+.sponsor > h1,
+.sponsor > p {
+  text-align: center;
+}
+
+.sponsor > p {
+  margin-block: 24px 50px;
+}
+
+.sponsor__items {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.sponsor__items > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sponsor__items img {
+  filter: grayscale(100%);
+  max-width: 100%;
+  height: auto;
+}

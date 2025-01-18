@@ -74,27 +74,3 @@
 .flex {
   display: flex;
 }
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.items-end {
-  align-items: end;
-}

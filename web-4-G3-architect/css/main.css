@@ -3,5 +3,7 @@
 @import url("sections/features.css");
 @import url("sections/feature-list.css");
 @import url("sections/some-facts.css");
+@import url("sections/sponsor.css");
+@import url("sections/footer.css");
 /* media files  */
 @import url("media.css");

@@ -3,6 +3,11 @@
   padding: 50px 0 45px;
 }
 
+.header__nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__items {
   list-style: none;
 }
