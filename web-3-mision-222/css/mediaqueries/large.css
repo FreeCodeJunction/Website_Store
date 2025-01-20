@@ -1,0 +1,13 @@
+@media screen and (width <= 1200px) {
+  .hero {
+    padding-inline: 2rem;
+  }
+
+  .hero__img-container {
+    flex-basis: 40%;
+  }
+
+  .hero__content {
+    flex-basis: 60%;
+  }
+}

@@ -1,0 +1,18 @@
+@media screen and (width <= 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero__img-container {
+    order: -1;
+    height: 400px;
+    flex-basis: auto;
+    margin-top: -40px;
+  }
+
+  .hero__content {
+    flex-basis: auto;
+    max-width: 520px;
+  }
+}

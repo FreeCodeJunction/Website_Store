@@ -1,0 +1,27 @@
+@media screen and (width <= 576px) {
+  .hero {
+    padding-inline: 1rem;
+  }
+
+  .hero__title {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .hero__footer {
+    font-size: 0.9rem;
+  }
+
+  .hero__img-container {
+    max-height: 400px;
+    height: auto;
+  }
+
+  .hero__img-container > img {
+  }
+}

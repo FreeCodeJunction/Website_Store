@@ -1,0 +1,14 @@
+@media screen and (width <= 992px) {
+  .hero__title {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .hero__description {
+    padding-right: 2rem;
+  }
+
+  .hero__img-container > img {
+    max-width: 285px;
+  }
+}

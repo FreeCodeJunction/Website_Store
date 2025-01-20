@@ -1,0 +1,13 @@
+/* this main.css contains all the variables css resets and all the utility classes */
+@import url("main.css");
+
+/* section css imports  */
+@import url("sections/hero.css");
+
+/* media queries for different screen sizes  */
+@import url("mediaqueries/xxl.css");
+@import url("mediaqueries/xl.css");
+@import url("mediaqueries/large.css");
+@import url("mediaqueries/medium.css");
+@import url("mediaqueries/small.css");
+@import url("mediaqueries/x-small.css");
