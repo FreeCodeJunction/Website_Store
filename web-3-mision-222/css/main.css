@@ -99,7 +99,7 @@ img {
 
 @media screen and (width <= 576px) {
   .regular-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: initial;
     margin-bottom: 20px;
   }

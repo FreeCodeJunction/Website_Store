@@ -5,6 +5,7 @@
 @import url("sections/hero.css");
 @import url("sections/mission.css");
 @import url("sections/article.css");
+@import url("sections/application.css");
 
 /* media queries for different screen sizes  */
 @import url("mediaqueries/xxl.css");
