@@ -1,5 +1,5 @@
 @media screen and (width <= 1200px) {
-  .hero {
+  .wrapper {
     padding-inline: 2rem;
   }
 
