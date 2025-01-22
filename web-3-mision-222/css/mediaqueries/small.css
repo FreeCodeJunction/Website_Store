@@ -36,13 +36,13 @@
   .article-1,
   .article-2 {
     gap: 20px;
+    justify-content: space-between;
   }
 
   .article__para {
     font-size: 0.9rem;
-    margin-block: 8px;
     line-height: initial;
-    max-width: initial;
+    max-width: 415px;
   }
 
   /* application  */

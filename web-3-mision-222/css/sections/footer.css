@@ -1,0 +1,26 @@
+.footer {
+  min-height: 177px;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-pure-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer > h1 {
+  font: 400 2.25rem var(--font-lobster);
+  line-height: 44px;
+  letter-spacing: 0.5px;
+}
+
+.footer > h1 > span {
+  color: var(--clr-mild-red);
+}
+
+.footer > p {
+  font: 400 0.875rem var(--font-manrope);
+  line-height: 24px;
+  color: var(--clr-footer-para);
+}

@@ -59,10 +59,6 @@
     max-height: 320px;
   }
 
-  .article__para {
-    max-width: 95%;
-  }
-
   /* application section 
    */
   .application > .regular-heading {
@@ -76,5 +72,15 @@
   }
   .application__img-container {
     max-width: 327px;
+  }
+
+  /* footer  */
+
+  .footer {
+    min-height: 140px;
+  }
+
+  .footer > p {
+    font-size: 0.7rem;
   }
 }
