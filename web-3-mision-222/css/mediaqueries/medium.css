@@ -1,4 +1,7 @@
 @media screen and (width <= 992px) {
+  .hero {
+    margin-top: 3rem;
+  }
   .hero__title {
     font-size: 3rem;
     line-height: 60px;
