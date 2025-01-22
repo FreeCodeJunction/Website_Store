@@ -1,0 +1,75 @@
+.application {
+  margin-block: 84px 122px;
+}
+
+.application > .regular-heading {
+  margin-bottom: 0;
+}
+
+.application__container {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 85px;
+}
+
+.application__img-container {
+  position: relative;
+}
+
+.application__img-container > img {
+  max-width: 338px;
+}
+
+.bg-one,
+.application__img-container::before,
+.application__img-container::after {
+  aspect-ratio: 1;
+  position: absolute;
+  z-index: -1;
+}
+
+.application__img-container::before,
+.application__img-container::after {
+  content: "";
+  background: url("../../images/shapes/shape-3.png") no-repeat;
+  width: 77px;
+  background-size: contain;
+}
+
+.application__img-container::before {
+  bottom: 0;
+  left: 0;
+  translate: 0 -10px;
+}
+
+.application__img-container::after {
+  right: 0;
+  top: 65%;
+}
+
+.bg-one {
+  max-width: 147px;
+  top: 0;
+  left: 0;
+  translate: -20% -20%;
+}
+
+.application__content {
+  max-width: 525px;
+}
+
+.application__title {
+  text-align: initial;
+  line-height: 131%;
+  margin-bottom: 0;
+}
+
+.application__para {
+  font-size: 1.125rem;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--clr-easy-black);
+  margin-block: 16px;
+}

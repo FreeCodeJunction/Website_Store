@@ -40,4 +40,23 @@
   .article-2 {
     margin-top: 40px;
   }
+
+  /* application section */
+
+  .application__container {
+    grid-template-columns: 1fr 1.2fr;
+    margin-top: 45px;
+  }
+
+  .application__img-container > img {
+    max-width: 100%;
+  }
+
+  .application__title {
+    font-size: 2.5rem;
+  }
+
+  .application__para {
+    font-size: 1.05rem;
+  }
 }

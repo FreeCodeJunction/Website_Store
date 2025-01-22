@@ -62,4 +62,19 @@
   .article__para {
     max-width: 95%;
   }
+
+  /* application section 
+   */
+  .application > .regular-heading {
+    line-height: 34px;
+  }
+
+  .application__container {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    margin-top: 25px;
+  }
+  .application__img-container {
+    max-width: 327px;
+  }
 }
