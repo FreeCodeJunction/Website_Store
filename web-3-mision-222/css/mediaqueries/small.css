@@ -14,4 +14,31 @@
     flex-basis: auto;
     max-width: 520px;
   }
+
+  /* article section  */
+
+  .article__img-container {
+    max-width: 200px;
+  }
+
+  .article-1 > .article__img-container::before,
+  .article-2 > .article__img-container::before {
+    display: none;
+  }
+
+  .article__title {
+    font-size: 1.5rem;
+  }
+
+  .article-1,
+  .article-2 {
+    gap: 20px;
+  }
+
+  .article__para {
+    font-size: 0.9rem;
+    margin-block: 8px;
+    line-height: initial;
+    max-width: initial;
+  }
 }

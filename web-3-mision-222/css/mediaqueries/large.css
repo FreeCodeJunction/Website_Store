@@ -10,4 +10,14 @@
   .hero__content {
     flex-basis: 60%;
   }
+
+  /* article section  */
+
+  .article-2 {
+    margin-top: 70px;
+  }
+
+  .article__img-container {
+    max-width: 350px;
+  }
 }

@@ -45,11 +45,13 @@ img {
   max-width: 100%;
   height: auto;
   max-height: 100%;
+  display: block;
 }
 
 .wrapper {
   max-width: 1440px;
   margin-inline: auto;
+  overflow: hidden;
 }
 
 .max-inline {
@@ -78,6 +80,7 @@ img {
 }
 
 .regular-button {
+  font-family: var(--font-roboto);
   font-weight: 500;
   color: var(--clr-pure-white);
   display: inline-block;

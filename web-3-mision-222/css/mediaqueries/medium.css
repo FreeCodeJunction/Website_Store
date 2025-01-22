@@ -14,4 +14,30 @@
   .hero__img-container > img {
     max-width: 285px;
   }
+
+  /* article section  */
+
+  .article-1,
+  .article-2 {
+    gap: 30px;
+  }
+
+  .article__img-container {
+    max-width: 300px;
+  }
+
+  .article__title {
+    font-size: 1.8rem;
+  }
+
+  .article__para {
+    font-size: 1rem;
+    line-height: 25px;
+    margin-block: 10px;
+    max-width: 95%;
+  }
+
+  .article-2 {
+    margin-top: 40px;
+  }
 }
