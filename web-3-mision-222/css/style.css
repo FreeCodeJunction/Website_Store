@@ -4,6 +4,7 @@
 /* section css imports  */
 @import url("sections/hero.css");
 @import url("sections/mission.css");
+@import url("sections/article.css");
 
 /* media queries for different screen sizes  */
 @import url("mediaqueries/xxl.css");

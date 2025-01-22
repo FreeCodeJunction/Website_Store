@@ -44,6 +44,10 @@
   max-width: 471px;
 }
 
+.hero .regular-button {
+  font-family: var(--font-poppins);
+}
+
 .hero__footer {
   color: var(--clr-black-easy);
   margin-top: 11px;
