@@ -12,6 +12,10 @@
   --clr-mild-black: #333333;
   --clr-easy-black: #3e3e3e;
   --clr-black-easy: #434343;
+  --clr-easy-brown: #424242;
+  --clr-item1-bg: rgba(79, 157, 166, 0.1);
+  --clr-item2-bg: rgba(255, 89, 89, 0.1);
+  --clr-item3-bg: #fff4d6;
 }
 
 * {
@@ -22,6 +26,8 @@
 
 html {
   font-family: var(--font-poppins);
+
+  /* colors  */
 }
 
 a {
@@ -46,7 +52,23 @@ img {
   margin-inline: auto;
 }
 
+.max-inline {
+  max-width: 1128px;
+  margin-inline: auto;
+}
+
 /* utility classes  */
+.regular-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.regular-heading > span {
+  color: var(--clr-mild-yellow);
+}
 
 .regular-description {
   font-weight: 400;
@@ -63,4 +85,19 @@ img {
   padding: 12px 37.5px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (width <= 768px) {
+  .regular-heading {
+    font-size: 2.4rem;
+    line-height: initial;
+  }
+}
+
+@media screen and (width <= 576px) {
+  .regular-heading {
+    font-size: 2rem;
+    line-height: initial;
+    margin-bottom: 20px;
+  }
 }

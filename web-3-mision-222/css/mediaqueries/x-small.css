@@ -24,4 +24,23 @@
     max-height: 400px;
     height: auto;
   }
+
+  /* mission section  */
+
+  .mission {
+    margin-block: 30px 40px;
+  }
+
+  .mission__item {
+    padding: 15px 10px 30px 20px;
+  }
+
+  .mission__item-title {
+    font-size: 1.2rem;
+    margin-block: 8px 12px;
+  }
+
+  .mission__item-para {
+    font-size: 0.9rem;
+  }
 }
