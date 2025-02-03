@@ -5,8 +5,12 @@
   --clr-primary: #fba24f;
   --clr-mild-red: #ff1e1e;
   --clr-pure-white: white;
+  --clr-three: #707070;
+  --clr-four: #18191f;
   --clr-shadow-btn: rgba(252, 143, 73, 0.5);
   --primary-gradient: linear-gradient(90deg, #fba24f, #ff1e1e);
+
+  --ff-manrope: "Manrope", serif;
 }
 @layer base, components, utilities;
 /* base layer */
@@ -39,10 +43,14 @@
 
 /* components layer */
 @layer components {
-  .banner {
+  .banner,
+  .about-me {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .banner {
     margin-block: 100px;
   }
 
@@ -81,35 +89,105 @@
   }
 
   .banner__img,
-  .banner__img-back-one {
+  .banner__img-back-one,
+  .banner__img-back-two {
     /* grid-area: 1 / 1 / 2 / 2; */
     grid-area: full;
+    justify-self: end;
+    align-self: end;
   }
 
-  .banner__img {
+  .banner__img,
+  .banner__img-back-two {
     position: relative;
     left: -4rem;
     top: -4rem;
   }
 
-  /* container queries  */
-  @container banner-content () {
+  /* About Me section styling */
+
+  .about-me {
+    background: url(./images/shapes/7.png) no-repeat center / 100% 100%;
   }
+
+  .about-me__image-container {
+    justify-self: center;
+    padding-top: 4rem;
+  }
+
+  .about-me__img {
+    max-width: 338px;
+  }
+
+  .about-me__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 54px;
+    color: var(--clr-three);
+  }
+
+  .about-me__description {
+    margin-block: 32px 90px;
+    max-width: 444px;
+  }
+
+  /* breakpoint 900*/
+  @media screen and (width <= 900px) {
+    .about-me {
+      padding-inline: 0 1rem;
+    }
+    .about-me__description {
+      margin-block: 30px 40px;
+    }
+  }
+
   /* medium devices 768px */
   @media screen and (width <= 48rem) {
-    .banner {
+    .banner,
+    .about-me {
       grid-template-columns: 1fr;
+    }
+    .banner {
       margin-block: 70px;
     }
 
     .banner__img {
       position: static;
     }
+
+    .banner__img-back-two {
+      position: static;
+    }
+
+    /* about me section */
+    .about-me {
+      grid-auto-rows: 1fr;
+    }
+
+    .about-me__content {
+      justify-self: center;
+    }
   }
 
   @media screen and (width <= 576px) {
     .banner {
       margin-block: 50px;
+    }
+
+    .about-me__img {
+      max-width: 300px;
+    }
+
+    .about-me {
+      padding-inline: 1rem;
+    }
+
+    .about-me__image-container {
+      padding-top: 1rem;
+    }
+
+    .about-me__description {
+      margin-block: 20px 30px;
     }
   }
 }
@@ -142,9 +220,23 @@
     transform: scale(1.02);
   }
 
+  .regular-para {
+    font-size: 1.125rem;
+    line-height: 32px;
+    font-family: var(--ff-manrope);
+    color: var(--clr-four);
+  }
+
   @media screen and (width <= 1280px) {
     .max-inline {
       padding: 0 2rem;
+    }
+  }
+
+  @media screen and (width <= 900px) {
+    .regular-para {
+      line-height: 30px;
+      font-size: 1rem;
     }
   }
 
