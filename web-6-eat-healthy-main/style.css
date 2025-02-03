@@ -201,6 +201,50 @@
       font-size: 2rem;
     }
   }
+
+  /* rating and stats section */
+  .rating {
+    container: rating-items / inline-size;
+  }
+  .rating__items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    padding-block: 4rem;
+    border-radius: 20px;
+  }
+
+  .rating__title {
+    font-weight: 700;
+    color: var(--clr-four);
+    font-size: 4.25rem;
+  }
+
+  .rating__description {
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--clr-four);
+  }
+
+  @container rating-items (width <= 690px) {
+    .rating__items {
+      padding-block: 2rem;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding-inline: 1rem;
+    }
+  }
+
+  .footer {
+    padding-block: 115px;
+    background-color: black;
+    margin-top: 92px;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+  }
+
   /* breakpoint 900*/
   @media screen and (width <= 900px) {
     .about-me {
@@ -213,6 +257,10 @@
     /* recipe section */
     .recipe {
       margin-block: 60px 80px;
+    }
+
+    .rating__title {
+      font-size: 4rem;
     }
   }
 
@@ -268,6 +316,11 @@
     .recipe__item {
       padding: 20px;
     }
+
+    .footer {
+      padding-block: 70px;
+      padding-inline: 1rem;
+    }
   }
 }
 /* utilities layer */
@@ -308,7 +361,7 @@
 
   @media screen and (width <= 1280px) {
     .max-inline {
-      padding: 0 2rem;
+      padding-inline: 2rem;
     }
   }
 
@@ -321,7 +374,7 @@
 
   @media screen and (width <= 576px) {
     .max-inline {
-      padding: 0 1rem;
+      padding-inline: 1rem;
     }
 
     .regular-button {
