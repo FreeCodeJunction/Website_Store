@@ -7,6 +7,7 @@
   --clr-pure-white: white;
   --clr-three: #707070;
   --clr-four: #18191f;
+  --clr-five: #676767;
   --clr-shadow-btn: rgba(252, 143, 73, 0.5);
   --primary-gradient: linear-gradient(90deg, #fba24f, #ff1e1e);
 
@@ -131,6 +132,75 @@
     max-width: 444px;
   }
 
+  /* recipe section */
+  .recipe {
+    margin-block: 72px 100px;
+    container: recipe / inline-size;
+  }
+
+  .recipe__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--clr-five);
+  }
+
+  .recipe__description {
+    max-width: 706px;
+    margin-inline: auto;
+    text-align: center;
+    margin-block: 30px 40px;
+  }
+
+  .recipe__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @container recipe (width <= 800px) {
+    .recipe__items {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  .recipe__item {
+    border-radius: 30px;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 610px;
+    width: 100%;
+    /* container: recipe-item / inline-size; */
+    container-type: inline-size;
+    container-name: recipe-item;
+  }
+
+  .recipe__item-img {
+    max-height: 308px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .recipe__item-title {
+    font-size: 1.75rem;
+    line-height: 40px;
+    font-weight: 900;
+    color: var(--clr-four);
+    margin-block: 30px 10px;
+  }
+
+  .recipe__item-para {
+    padding-right: 1rem;
+  }
+
+  @container recipe-item (width <= 400px) {
+    .recipe__item-title {
+      margin-block: 20px 10px;
+      font-size: 2rem;
+    }
+  }
   /* breakpoint 900*/
   @media screen and (width <= 900px) {
     .about-me {
@@ -138,6 +208,11 @@
     }
     .about-me__description {
       margin-block: 30px 40px;
+    }
+
+    /* recipe section */
+    .recipe {
+      margin-block: 60px 80px;
     }
   }
 
@@ -188,6 +263,10 @@
 
     .about-me__description {
       margin-block: 20px 30px;
+    }
+    /* recipe section */
+    .recipe__item {
+      padding: 20px;
     }
   }
 }
