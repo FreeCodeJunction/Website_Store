@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link
+      rel="shortcut icon"
+      href="images/do not use this pic.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/fb9ffdad9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        /* text sizes */
+        --text-extra-large: 5rem;
+
+        /* * spacing */
+        --spacing-wrapper: 1440px;
+        --spacing-main: 1170px;
+        --spacing-three-eight: 38px;
+        --spacing-th-ze-ni: 309px;
+        /* font family */
+        --font-primary: "Roboto", serif;
+        --font-secondary: "Bebas Neue", serif;
+        /* colors */
+        --color-primary: #ff8063;
+        --color-optional: #f46060;
+        --color-dark-one: #3e3e3e;
+        --color-dark-two: #363958;
+
+        /* animations */
+        --animate-fade-in-left: fade-in-left 1s ease-out;
+        @keyframes fade-in-left {
+          from {
+            translate: 50px 0;
+          }
+          to {
+            translate: 0;
+          }
+        }
+        --animate-fade-in-right: fade-in-right 1s ease-out;
+        @keyframes fade-in-right {
+          from {
+            translate: -50px 0;
+          }
+          to {
+            translate: 0;
+          }
+        }
+      }
+
+      .max-inline {
+        @apply max-w-main mx-auto px-4 sm:px-0;
+      }
+
+      .regular-para {
+        @apply leading-6 text-dark-one;
+      }
+
+      .regular-button {
+        @apply leading-6 font-medium text-white sm:py-4 py-3 sm:px-14 px-9 rounded-md bg-gradient-to-b from-optional to-primary;
+      }
+
+      .regular-heading {
+        @apply font-bold text-4xl sm:text-5xl font-secondary text-dark-two;
+      }
+    </style>
+  </head>
+  <body class="font-primary">
+    <div class="max-w-wrapper mx-auto">
+      <!-- header section -->
+      <header class="max-inline mb-8 sm:mb-0">
+        <!-- navbar -->
+        <nav
+          class="animate-fade-in-left space-x-5 sm:space-x-10 flex justify-center sm:justify-end py-5 sm:py-9"
+        >
+          <a href="#about" class="leading-6 font-medium text-dark-one">About</a
+          ><a href="#work" class="leading-6 font-medium text-dark-one">Work</a
+          ><a href="#portfolio" class="leading-6 font-medium text-dark-one"
+            >Portfolio</a
+          ><a href="#contact" class="leading-6 font-medium text-dark-one"
+            >Contact</a
+          >
+        </nav>
+        <!-- banner section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <!-- content -->
+          <div
+            class="animate-fade-in-right order-1 sm:order-0 justify-self-center self-center sm:justify-self-stretch"
+          >
+            <h1
+              class="font-bold font-secondary sm:text-extra-large text-6xl leading-[96%] tracking-wide"
+            >
+              Hello, I'm <br />
+              <span class="text-primary"> Rob Davidson</span>
+            </h1>
+            <p class="regular-para max-w-th-ze-ni sm:mt-4 sm:mb-9 mt-3 mb-6">
+              A full stack all-rounder designer that placerat in massa
+              consectetur
+            </p>
+            <button class="regular-button">Hire Me</button>
+          </div>
+          <!-- image container -->
+          <div class="max-w-[400px] justify-self-center grid grid-cols-1">
+            <img src="images/do not use this pic.png" alt="profile pic" />
+          </div>
+        </div>
+      </header>
+
+      <!-- About me section -->
+      <section class="max-inline grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <!-- image container -->
+        <div class="max-w-[465px] justify-self-center">
+          <img src="images/do not use this pic2.png" alt="profile pic" />
+        </div>
+
+        <!-- content -->
+        <div
+          class="animate-fade-in-right justify-self-center sm:justify-self-end self-center"
+        >
+          <h2 class="regular-heading">About</h2>
+          <p class="regular-para max-w-th-ze-ni sm:mt-4 sm:mb-9 mt-3 mb-6">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <button class="regular-button space-x-4">
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
