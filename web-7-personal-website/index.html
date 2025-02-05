@@ -33,6 +33,11 @@
         --color-optional: #f46060;
         --color-dark-one: #3e3e3e;
         --color-dark-two: #363958;
+        --color-project-bg: #f8f9fc;
+        --color-dark-three: #6c6c6c;
+
+        /* box shadow */
+        --shadow-project-item: 0 7px 20px rgba(0, 0, 0, 0.07);
 
         /* animations */
         --animate-fade-in-left: fade-in-left 1s ease-out;
@@ -108,7 +113,11 @@
           </div>
           <!-- image container -->
           <div class="max-w-[400px] justify-self-center grid grid-cols-1">
-            <img src="images/do not use this pic.png" alt="profile pic" />
+            <img
+              src="images/do not use this pic.png"
+              alt="profile pic"
+              loading="lazy"
+            />
           </div>
         </div>
       </header>
@@ -117,7 +126,11 @@
       <section class="max-inline grid grid-cols-1 sm:grid-cols-2 gap-5">
         <!-- image container -->
         <div class="max-w-[465px] justify-self-center">
-          <img src="images/do not use this pic2.png" alt="profile pic" />
+          <img
+            src="images/do not use this pic2.png"
+            alt="profile pic"
+            loading="lazy"
+          />
         </div>
 
         <!-- content -->
@@ -135,6 +148,74 @@
             <i class="fa-solid fa-download"></i>
             <span>Download CV</span>
           </button>
+        </div>
+      </section>
+
+      <!-- Latest Projects section -->
+      <section
+        class="bg-project-bg @container/projects sm:mt-18 mt-10 sm:mb-25 mb-15 sm:pt-31 pt-20 sm:pb-46 pb-25"
+      >
+        <div class="max-inline">
+          <h2 class="regular-heading text-center">
+            <span class="text-primary">Latest</span> Working Project
+          </h2>
+
+          <!-- projects section -->
+          <div
+            class="flex flex-col @[770px]/projects:flex-row flex-wrap justify-center items-center grid-cols-1 gap-7 sm:mt-20 mt-10"
+          >
+            <!-- single item  -->
+            <div
+              class="pt-4 px-3 pb-5 rounded-2xl shadow-project-item max-w-[370px]"
+            >
+              <img
+                src="images/image 4.png"
+                alt="project image"
+                loading="lazy"
+              />
+              <h3 class="font-bold text-2xl text-dark-two sm:mt-6 mt-4 mb-3">
+                Power-x-gym (gym website)
+              </h3>
+              <p class="regular-para text-dark-three">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <!-- single item  -->
+            <div
+              class="pt-4 px-3 pb-5 rounded-2xl shadow-project-item max-w-[370px]"
+            >
+              <img
+                src="images/image 5.png"
+                alt="project image"
+                loading="lazy"
+              />
+              <h3 class="font-bold text-2xl text-dark-two sm:mt-6 mt-4 mb-3">
+                Creative Agency
+              </h3>
+              <p class="regular-para text-dark-three">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <!-- single item  -->
+            <div
+              class="pt-4 px-3 pb-5 rounded-2xl shadow-project-item max-w-[370px]"
+            >
+              <img
+                src="images/image 8.png"
+                alt="project image"
+                loading="lazy"
+              />
+              <h3 class="font-bold text-2xl text-dark-two sm:mt-6 mt-4 mb-3">
+                Hard Rock Music
+              </h3>
+              <p class="regular-para text-dark-three">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
