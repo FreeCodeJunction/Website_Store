@@ -20,6 +20,7 @@
         --color-accent: rgba(255, 220, 38, 1);
         --color-nav-bg: #fff9f4;
         --color-dark-two: rgba(17, 17, 17, 1);
+        --color-accent-mild: #f9df8a;
 
         --spacing-wrapper: 1600px;
         --spacing-main: 1320px;
@@ -31,6 +32,10 @@
 
       .regular-button {
         @apply sm:text-xl text-base sm:py-3 py-[10px] px-7 rounded-lg border-1 border-accent cursor-pointer hover:bg-yellow-800 hover:text-white hover:border-yellow-800 transition-colors;
+      }
+
+      .section-heading {
+        @apply font-display sm:text-4xl text-2xl sm:mb-12 mb-8;
       }
     </style>
   </head>
@@ -110,6 +115,148 @@
           <button class="regular-button bg-accent">Find a Pet</button>
         </div>
       </header>
+
+      <!-- * Category section -->
+      <section class="max-inline sm:mt-35 sm:mb-32 my-14">
+        <h3 class="section-heading">Browse By Categories</h3>
+        <!-- category section -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(175px,1fr))] sm:gap-6 gap-[10px] justify-items-center"
+        >
+          <!-- single-item -->
+          <div
+            class="sm:py-9 py-8 bg-accent-mild flex flex-col items-center sm:gap-6 gap-5 sm:rounded-xl rounded-sm w-full"
+          >
+            <!-- item image -->
+            <div class="sm:p-7 p-6 rounded-full bg-white">
+              <img
+                src="assets/dog-cartoon.png"
+                class="sm:w-12 aspect-square w-10"
+                alt="pet image"
+              />
+            </div>
+            <!-- item content -->
+            <div>
+              <h4 class="text-center font-display sm:text-xl text-[1.063rem]">
+                Dog
+              </h4>
+              <p class="text-center text-sm sm:text-base sm:mt-3 mt-[10px]">
+                3 items
+              </p>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div
+            class="sm:py-9 py-8 bg-accent-mild flex flex-col items-center sm:gap-6 gap-5 sm:rounded-xl rounded-sm w-full"
+          >
+            <!-- item image -->
+            <div class="sm:p-7 p-6 rounded-full bg-white">
+              <img
+                src="assets/fish-cartoon.png"
+                class="sm:w-12 aspect-square w-10"
+                alt="pet image"
+              />
+            </div>
+            <!-- item content -->
+            <div>
+              <h4 class="text-center font-display sm:text-xl text-[1.063rem]">
+                Fish
+              </h4>
+              <p class="text-center text-sm sm:text-base sm:mt-3 mt-[10px]">
+                3 items
+              </p>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div
+            class="w-full sm:py-9 py-8 bg-accent-mild flex flex-col items-center sm:gap-6 gap-5 sm:rounded-xl rounded-sm"
+          >
+            <!-- item image -->
+            <div class="sm:p-7 p-6 rounded-full bg-white">
+              <img
+                src="assets/cat-cartoon.png"
+                class="sm:w-12 aspect-square w-10"
+                alt="pet image"
+              />
+            </div>
+            <!-- item content -->
+            <div>
+              <h4 class="text-center font-display sm:text-xl text-[1.063rem]">
+                Cat
+              </h4>
+              <p class="text-center text-sm sm:text-base sm:mt-3 mt-[10px]">
+                3 items
+              </p>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div
+            class="w-full sm:py-9 py-8 bg-accent-mild flex flex-col items-center sm:gap-6 gap-5 sm:rounded-xl rounded-sm"
+          >
+            <!-- item image -->
+            <div class="sm:p-7 p-6 rounded-full bg-white">
+              <img
+                src="assets/bird-cartoon.png"
+                class="sm:w-12 aspect-square w-10"
+                alt="pet image"
+              />
+            </div>
+            <!-- item content -->
+            <div>
+              <h4 class="text-center font-display sm:text-xl text-[1.063rem]">
+                Birds
+              </h4>
+              <p class="text-center text-sm sm:text-base sm:mt-3 mt-[10px]">
+                3 items
+              </p>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div
+            class="w-full sm:py-9 py-8 bg-accent-mild flex flex-col items-center sm:gap-6 gap-5 sm:rounded-xl rounded-sm"
+          >
+            <!-- item image -->
+            <div class="sm:p-7 p-6 rounded-full bg-white">
+              <img
+                src="assets/mouse-cartoon.png"
+                class="sm:w-12 aspect-square w-10"
+                alt="pet image"
+              />
+            </div>
+            <!-- item content -->
+            <div>
+              <h4 class="text-center font-display sm:text-xl text-[1.063rem]">
+                Small Pet
+              </h4>
+              <p class="text-center text-sm sm:text-base sm:mt-3 mt-[10px]">
+                3 items
+              </p>
+            </div>
+          </div>
+          <!-- single-item -->
+          <div
+            class="w-full sm:py-9 py-8 bg-accent-mild flex flex-col items-center sm:gap-6 gap-5 sm:rounded-xl rounded-sm"
+          >
+            <!-- item image -->
+            <div class="sm:p-7 p-6 rounded-full bg-white">
+              <img
+                src="assets/rabbit-cartoon.png"
+                class="sm:w-12 aspect-square w-10"
+                alt="pet image"
+              />
+            </div>
+            <!-- item content -->
+            <div>
+              <h4 class="text-center font-display sm:text-xl text-[1.063rem]">
+                Rabbit
+              </h4>
+              <p class="text-center text-sm sm:text-base sm:mt-3 mt-[10px]">
+                2 items
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
