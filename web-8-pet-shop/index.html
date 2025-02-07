@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fb9ffdad9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-display: "ADLaM Display", serif;
+        --font-sora: "Sora", serif;
+
+        /* colors */
+        --color-dark-one: #111111;
+        --color-accent: rgba(255, 220, 38, 1);
+        --color-nav-bg: #fff9f4;
+
+        --spacing-wrapper: 1600px;
+        --spacing-main: 1320px;
+      }
+
+      .max-inline {
+        @apply max-w-main mx-auto px-4 sm:px-0;
+      }
+
+      .regular-button {
+        @apply text-xl py-3 px-7 rounded-lg border-1 border-accent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-w-wrapper mx-auto font-sora">
+      <!-- * Header Section -->
+      <header>
+        <!-- navbar -->
+        <div class="bg-nav-bg">
+          <nav
+            class="max-inline sm:py-6 py-3 flex items-center justify-between border-b-[0.5px] border-dark-one sm:border-none"
+          >
+            <!-- logo  -->
+            <div class="flex items-center gap-3">
+              <img src="assets/logo-header.png" alt="logo image" />
+              <h1 class="text-2xl text-dark-one hidden sm:block">
+                Browse<span class="text-accent">4</span>Pets
+              </h1>
+            </div>
+
+            <!-- links -->
+            <ul class="sm:flex items-center gap-8 hidden">
+              <li><a href="#find-a-pet" class="text-xl">Find a Pet</a></li>
+              <li><a href="#breeds" class="text-xl">Breeds</a></li>
+              <li><a href="#contact-us" class="text-xl">Contact us</a></li>
+            </ul>
+
+            <!-- users login and signup -->
+            <div class="items-center gap-4 hidden sm:flex">
+              <i class="fa-regular fa-bell text-2xl"></i>
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+              <button class="regular-button">Login</button>
+              <button class="regular-button bg-accent">Register</button>
+            </div>
+            <!-- mobile menu icon -->
+            <div class="sm:hidden">
+              <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
