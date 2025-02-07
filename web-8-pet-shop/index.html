@@ -19,6 +19,7 @@
         --color-dark-one: #111111;
         --color-accent: rgba(255, 220, 38, 1);
         --color-nav-bg: #fff9f4;
+        --color-dark-two: rgba(17, 17, 17, 1);
 
         --spacing-wrapper: 1600px;
         --spacing-main: 1320px;
@@ -29,7 +30,7 @@
       }
 
       .regular-button {
-        @apply text-xl py-3 px-7 rounded-lg border-1 border-accent;
+        @apply sm:text-xl text-base sm:py-3 py-[10px] px-7 rounded-lg border-1 border-accent cursor-pointer hover:bg-yellow-800 hover:text-white hover:border-yellow-800 transition-colors;
       }
     </style>
   </head>
@@ -52,15 +53,37 @@
 
             <!-- links -->
             <ul class="sm:flex items-center gap-8 hidden">
-              <li><a href="#find-a-pet" class="text-xl">Find a Pet</a></li>
-              <li><a href="#breeds" class="text-xl">Breeds</a></li>
-              <li><a href="#contact-us" class="text-xl">Contact us</a></li>
+              <li>
+                <a
+                  href="#find-a-pet"
+                  class="text-xl cursor-pointer hover:text-yellow-800 transition-colors"
+                  >Find a Pet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#breeds"
+                  class="text-xl cursor-pointer hover:text-yellow-800 transition-colors"
+                  >Breeds</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact-us"
+                  class="text-xl cursor-pointer hover:text-yellow-800 transition-colors"
+                  >Contact us</a
+                >
+              </li>
             </ul>
 
             <!-- users login and signup -->
             <div class="items-center gap-4 hidden sm:flex">
-              <i class="fa-regular fa-bell text-2xl"></i>
-              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+              <i
+                class="fa-regular fa-bell text-2xl cursor-pointer hover:text-yellow-800 transition-colors"
+              ></i>
+              <i
+                class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-yellow-800 transition-colors"
+              ></i>
               <button class="regular-button">Login</button>
               <button class="regular-button bg-accent">Register</button>
             </div>
@@ -69,6 +92,22 @@
               <i class="fa-solid fa-bars text-3xl"></i>
             </div>
           </nav>
+        </div>
+        <!-- banner section -->
+        <div
+          class="max-inline sm:h-190 h-106 sm:pt-25 pt-8 bg-[url(assets/cat-big.png)] bg-contain bg-right-bottom bg-no-repeat"
+        >
+          <!-- banner content -->
+          <h2 class="font-display sm:text-[3.5rem] text-3xl max-w-[680px]">
+            Pamper Your Pet, Because They Deserve the Bes
+          </h2>
+          <p
+            class="sm:text-2xl text-base leading-normal font-normal sm:leading-9 max-w-[672px] text-dark-two mt-4 mb-6"
+          >
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="regular-button bg-accent">Find a Pet</button>
         </div>
       </header>
     </div>
