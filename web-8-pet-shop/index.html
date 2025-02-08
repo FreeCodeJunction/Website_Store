@@ -29,7 +29,7 @@
       }
 
       .max-inline {
-        @apply max-w-main mx-auto px-4 sm:px-0;
+        @apply max-w-main mx-auto px-4 2xl:px-0;
       }
 
       .regular-button {
@@ -48,7 +48,7 @@
         <!-- navbar -->
         <div class="bg-nav-bg">
           <nav
-            class="max-inline sm:py-6 py-3 flex items-center justify-between border-b-[0.5px] border-dark-one sm:border-none"
+            class="max-inline sm:py-6 py-3 flex items-center justify-between border-b-[0.5px] border-dark-one lg:border-none"
           >
             <!-- logo  -->
             <div class="flex items-center gap-3">
@@ -59,7 +59,7 @@
             </div>
 
             <!-- links -->
-            <ul class="sm:flex items-center gap-8 hidden">
+            <ul class="lg:flex items-center gap-8 hidden">
               <li>
                 <a
                   href="#find-a-pet"
@@ -84,7 +84,7 @@
             </ul>
 
             <!-- users login and signup -->
-            <div class="items-center gap-4 hidden sm:flex">
+            <div class="items-center gap-4 hidden md:flex">
               <i
                 class="fa-regular fa-bell text-2xl cursor-pointer hover:text-yellow-800 transition-colors"
               ></i>
@@ -95,8 +95,8 @@
               <button class="regular-button bg-accent">Register</button>
             </div>
             <!-- mobile menu icon -->
-            <div class="sm:hidden">
-              <i class="fa-solid fa-bars text-3xl"></i>
+            <div class="md:hidden">
+              <i class="fa-solid fa-bars text-3xl sm:text-4xl"></i>
             </div>
           </nav>
         </div>
@@ -550,6 +550,68 @@
           </div>
         </section>
       </div>
+
+      <!-- low price section -->
+      <section class="@container/low-price max-inline pt-8 mb-14 sm:mb-35">
+        <h2 class="section-heading sm:mb-12 mb-8">Everyday low Price</h2>
+        <!-- grid container  -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-[1.5fr_1fr]">
+          <!-- item one  -->
+          <div
+            class="h-[357px] sm:h-[480px] rounded-lg bg-[linear-gradient(135deg,#F7CCFB,#AFD2FD)] grid grid-cols-1 grid-rows-1"
+          >
+            <div
+              class="col-span-full row-span-full flex justify-end items-end sm:pr-8 lg:pr-0"
+            >
+              <img
+                src="assets/cute-dog-mid.png"
+                class="h-[70%] sm:h-9/10 lg:h-full"
+                alt=""
+              />
+            </div>
+            <div
+              class="row-span-full col-span-full pt-12 lg:pt-0 pl-12 lg:self-center"
+            >
+              <p class="hidden lg:block text-2xl">Under Price</p>
+              <h4 class="font-display text-2xl sm:text-4xl sm:mt-3 sm:mb-4">
+                Pet Grooming Mitt
+              </h4>
+              <p class="text-2xl text-white hidden lg:block">
+                (Easy Hair Removal)
+              </p>
+              <p
+                class="font-display text-4xl text-white lg:text-black sm:text-6xl sm:mt-4"
+              >
+                $7.99
+              </p>
+            </div>
+          </div>
+          <!-- item one  -->
+          <div
+            class="h-[357px] sm:h-[480px] rounded-lg bg-[linear-gradient(135deg,#FFF9F4,#F9DF8A)] grid grid-cols-1 grid-rows-1"
+          >
+            <div
+              class="col-span-full row-span-full flex justify-end items-end sm:pr-10 lg:pr-0"
+            >
+              <img
+                src="assets/cute-pet-mid.png"
+                class="h-[70%] sm:h-[90%]"
+                alt=""
+              />
+            </div>
+            <div class="row-span-full col-span-full pt-12 pl-12">
+              <h4 class="font-display text-2xl sm:text-3xl">
+                T-Shirt for Dogs
+              </h4>
+              <p
+                class="font-display text-4xl text-yellow-400 sm:text-5xl sm:mt-2"
+              >
+                $7.99
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
